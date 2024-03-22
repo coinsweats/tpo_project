@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Aug  2 07:02:43 2020
-
+original Created on Sun Aug  2 07:02:43 2020
 @author: alex1
 twitter.com/beinghorizontal
-
 """
+#CS edits - aim to create lightmode BTC static TPO chart for printing
 
 import pandas as pd
 import plotly.graph_objects as go
@@ -15,8 +14,8 @@ from datetime import timedelta
 from plotly.offline import plot
 
 freq = 30
-avglen = 10  # num days mean to get values
-days_to_display = 10  # Number of last n days you want on the screen to display
+avglen = 5  # num days mean to get values
+days_to_display = 5  # Number of last n days you want on the screen to display
 mode = 'tpo'  # for volume --> 'vol'
 
 # 1 min historical data. For static plots it needs to be up to date.
