@@ -1,14 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jul 30 06:34:11 2020
-
+Original created on Thu Jul 30 06:34:11 2020
 @author: alex1
-
 twitter.com/beinghorizontal
-
-beta version
-
 """
+#CS edit - alpha version
 
 import pandas as pd
 import plotly.graph_objects as go
@@ -25,12 +21,12 @@ from datetime import timedelta
 app = dash.Dash(__name__)
 
 # ticksz = 5
-# trading_hr = 7
+# trading_hr = 24
 
 refresh_int = 1  # refresh interval in seconds for live updates
 freq = 30
-avglen = 10  # num days mean to get values
-days_to_display = 10  # Number of last n days you want on the screen to display
+avglen = 5  # num days mean to get values
+days_to_display = 5  # Number of last n days you want on the screen to display
 mode = 'tpo'  # for volume --> 'vol'
 
 dfhist = pd.read_csv('history.txt')  # 1 min historical data in symbol,datetime,open,high,low,close,volume
